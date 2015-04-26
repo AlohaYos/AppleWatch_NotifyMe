@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="left" text="Label" id="tp1-m2-41v"/>
+                    </items>
+                    <connections>
+                        <outlet property="responseMessage" destination="tp1-m2-41v" id="ech-6E-GzW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController">
+                    <items>
+                        <group width="1" height="67" alignment="left" backgroundImage="gate" layout="vertical" radius="0.0" id="vBD-Tq-n4v">
+                            <items>
+                                <label alignment="left" text="Label" id="iNb-GO-Knj"/>
+                                <label alignment="left" text="Label" id="TIi-Ne-n6Y"/>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bodyMessage" destination="iNb-GO-Knj" id="6Tj-V6-Ng9"/>
+                        <outlet property="titleMessage" destination="TIi-Ne-n6Y" id="uhj-nD-bGR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="NLc-pO-3br">
+            <objects>
+                <notificationController id="Hku-yA-eWv">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="gla-Im-RdA"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="vote" id="bdN-fl-q7u">
+                        <color key="sashColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="gla-Im-RdA" id="lZ0-Wf-Z0d"/>
+                        <segue destination="CzN-F0-14Z" kind="relationship" relationship="dynamicNotificationInterface" id="Sid-YO-zjO"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="877"/>
+        </scene>
+        <!--Vote Notification Controller-->
+        <scene sceneID="mYR-n8-qJ3">
+            <objects>
+                <controller id="CzN-F0-14Z" customClass="voteNotificationController">
+                    <items>
+                        <group width="1" height="67" alignment="left" backgroundImage="meal" layout="vertical" id="RT7-jj-W7H">
+                            <items>
+                                <label alignment="left" text="Label" id="rRv-DH-Ag5"/>
+                                <label alignment="left" text="Label" id="AFA-73-Tru"/>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bodyMessage" destination="rRv-DH-Ag5" id="f0x-P2-9W1"/>
+                        <outlet property="titleMessage" destination="AFA-73-Tru" id="j6h-Io-meU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="877"/>
+        </scene>
+    </scenes>
+</document>

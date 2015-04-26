@@ -1,0 +1,22 @@
+{
+    "aps": {
+        "alert": {
+            "body": "テストメッセージ",
+            "title": "オプションタイトル"
+        },
+        "category": "myCategory"
+    },
+    
+    "WatchKit Simulator Actions": [
+	   {
+		   "title": "最初のボタン",
+		   "identifier": "firstButtonAction"
+	   },
+	   {
+		   "title": "２番目のボタン",
+		   "identifier": "secondButtonAction"
+	   }
+    ],
+    
+    "customKey": ""
+}

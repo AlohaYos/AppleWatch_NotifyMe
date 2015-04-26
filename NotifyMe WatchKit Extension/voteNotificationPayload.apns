@@ -1,0 +1,30 @@
+{
+	"aps": {
+		"alert": {
+			"body": "料理の希望を調査",
+			"title": "どれにする？"
+		},
+		"category": "vote",
+	},
+	
+	"WatchKit Simulator Actions": [
+								   {
+								   "title": "居酒屋",
+								   "identifier": "vote.izakayaButtonAction"
+								   },
+								   {
+								   "title": "中華料理",
+								   "identifier": "vote.chineseButtonAction"
+								   },
+								   {
+								   "title": "焼き肉",
+								   "identifier": "vote.stakeButtonAction"
+								   },
+								   {
+								   "title": "幹事に任せる",
+								   "identifier": "vote.proxyButtonAction"
+								   }
+								   ],
+	
+	"customKey": "Use this file to define a testing payload for your notifications. The aps dictionary specifies the category, alert text and title. The WatchKit Simulator Actions array can provide info for one or more action buttons in addition to the standard Dismiss button. Any other top level keys are custom payload. If you have multiple such JSON files in your project, you'll be able to select them when choosing to debug the notification interface of your Watch App."
+}
